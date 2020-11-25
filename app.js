@@ -23,4 +23,4 @@ app.get("/getMood", userController.getMood);
 app.post("/mood", userController.checkDuplicate);
 
 // Finally! Listen on Port 8080
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
